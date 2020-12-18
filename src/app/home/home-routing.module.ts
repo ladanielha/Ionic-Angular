@@ -17,21 +17,13 @@ const routes: Routes = [
         loadChildren: () => import('./terdekat/terdekat.module').then( m => m.TerdekatPageModule)
       },
       {
-        path: 'managebooking',
-        loadChildren: () => import('./managebooking/managebooking.module').then( m => m.ManagebookingPageModule)
-      },
-      {
         path: 'profile',
         loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
       },
       {
         path: 'tercepat',
         loadChildren: () => import('./tercepat/tercepat.module').then( m => m.TercepatPageModule)
-      },
-      {
-        path: 'pcrtest',
-        loadChildren: () => import('./pcrtest/pcrtest.module').then( m => m.PcrtestPageModule)
-      },
+      },    
       {
         path: 'detail',
         loadChildren: () => import('./detail/detail.module').then( m => m.DetailPageModule)
@@ -39,10 +31,6 @@ const routes: Routes = [
       {
         path: 'booking',
         loadChildren: () => import('./booking/booking.module').then( m => m.BookingPageModule)
-      },
-      {
-        path: 'history',
-        loadChildren: () => import('./history/history.module').then( m => m.HistoryPageModule)
       },
       {
         path: 'main',
