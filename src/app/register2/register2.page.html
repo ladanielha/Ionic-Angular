@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="primary" defaultHref="register1">
+
+        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title>Verification Account</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+
+<ion-grid>
+  <p>
+    Please check your email and click on the link to verfiy your email address.
+   
+  </p><br>
+  <ion-row>
+
+    <ion-button type="submit" (click)="authService.SendVerificationMail()" expand="block">
+      Resend Verification Email
+    </ion-button>
+    <ion-button type="submit" href="/login" expand="block">Login</ion-button>
+  </ion-row>
+</ion-grid>
+
+
+</ion-content>

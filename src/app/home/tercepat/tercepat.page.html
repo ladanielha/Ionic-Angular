@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="primary" defaultHref="home/tabs/main">
+        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title>Tercepat</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid justify-content-center align-items-center>
+    <ion-row>
+      <ion-col size="12" size-sm="8" offset-sm="2" shape="round">
+        <ion-img  class="image" src="https://www.google.com/maps/d/thumbnail?mid=1Xbkrh789WSsHPBfq4_JpXs5EV2g"></ion-img>
+      </ion-col>
+      <ion-col size="12" size-sm="8" offset-sm="2">
+        <ion-card *ngFor="let rs of rumahsakit" routerLink="/home/tabs/detail/{{rs.key}}">
+          <ion-card-header>{{rs.nama}}</ion-card-header>
+            <ion-card-content>
+              Alamat : {{rs.alamat}}<br>
+              Harga : Rp.{{rs.harga}}
+            </ion-card-content>
+          </ion-card>
+      </ion-col>
+    </ion-row> 
+  </ion-grid>
+</ion-content>
